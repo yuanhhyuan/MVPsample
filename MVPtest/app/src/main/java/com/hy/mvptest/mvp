@@ -1,0 +1,21 @@
+Example
+MVP模式在Android开发中的应用
+http://blog.csdn.net/vector_yi/article/details/24719873?utm_source=tuicool
+
+M层：
+UserBean   业务数据
+
+UserModel   与业务数据处理的操作
+IUserModel  定义P层与M层的操作接口
+
+
+
+V层：
+UserActivity  V层展示
+IUserView  定义P层与V层的操作接口
+
+
+
+P层：
+UserPresenter 通过获得M层和V层对象，来实现M层和V层数据的交互
+
